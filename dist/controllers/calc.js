@@ -1,0 +1,1 @@
+"use strict";var _add=require("../models/add.js");console.log((0,_add.add)(1,2));
