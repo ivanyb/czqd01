@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set PORT=6000 NODE_EVN=dev ",
-    "dist": "set PORT=7000 NODE_EVN=dist "
+    "dev": "cross-env PORT=9090 NODE_EVN=dev nodemon index.js",
+    "dist": "cross-env PORT=9091 NODE_EVN=dist nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,12 +18,13 @@
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.2",
     "gulp-rev": "^7.1.0",
-    "gulp-uglify": "^1.5.4"
+    "gulp-uglify": "^1.5.4",
+    "gulp-copy":"0.0.2",
+    "gulp-rev-collector": "^1.0.5"
   },
   "dependencies": {
     "express": "^4.14.0",
     "express-session": "^1.14.0",
-    "gulp-rev-collector": "^1.0.5",
     "mongoose": "^4.5.2",
     "xtemplate": "^4.5.1",
     "xtpl": "^3.2.0"

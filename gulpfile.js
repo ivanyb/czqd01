@@ -14,7 +14,7 @@ const gulp = require('gulp');
 
 
 //2.0 定义任务
-gulp.task('default',['es6toes5','cleancss','minimage','minhtml'],()=>{
+gulp.task('default',['es6toes5','cleancss','minimage','minhtml','copy'],()=>{
  
   console.log('gulp自动化完毕');
 

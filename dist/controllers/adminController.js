@@ -1,0 +1,1 @@
+"use strict";exports.list=function(t,l){console.log("admin/list"),l.end("get all list")};
